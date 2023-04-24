@@ -18,11 +18,18 @@ struct ContentView: View {
                     Section(section.name) {
                         
                         ForEach(section.items) { item in
-                            ItemRow(item: item)
+                            // with Hashable NavigationLink(value: ...) it's more efficient in performance than NavigationLink destination, label etc.
+                            NavigationLink(value: item) {
+                                ItemRow(item: item)
+                            }
                         }
                         
                     }
                 }
+            }
+            // with Hashable NavigationLink(value: ...) it's better in performance
+            .navigationDestination(for: MenuItem.self) { item in
+                ItemDetail(item: item)
             }
             .navigationTitle("Menu")
             .listStyle(.grouped)
