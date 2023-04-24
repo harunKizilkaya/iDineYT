@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873BA74A29F6C60C00BCB7B8 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BA74929F6C60C00BCB7B8 /* ItemRow.swift */; };
 		8757562729D738EA002FDE38 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757562629D738EA002FDE38 /* iDineApp.swift */; };
 		8757562929D738EA002FDE38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757562829D738EA002FDE38 /* ContentView.swift */; };
 		8757562B29D738EB002FDE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8757562A29D738EB002FDE38 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873BA74929F6C60C00BCB7B8 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		8757562329D738EA002FDE38 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8757562629D738EA002FDE38 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		8757562829D738EA002FDE38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				8757562629D738EA002FDE38 /* iDineApp.swift */,
 				8757562829D738EA002FDE38 /* ContentView.swift */,
+				873BA74929F6C60C00BCB7B8 /* ItemRow.swift */,
 				8757563829D7390A002FDE38 /* Menu.swift */,
 				8757563A29D7390F002FDE38 /* Order.swift */,
 				8757563429D73902002FDE38 /* Helper.swift */,
@@ -153,6 +156,7 @@
 				8757562929D738EA002FDE38 /* ContentView.swift in Sources */,
 				8757562729D738EA002FDE38 /* iDineApp.swift in Sources */,
 				8757563B29D7390F002FDE38 /* Order.swift in Sources */,
+				873BA74A29F6C60C00BCB7B8 /* ItemRow.swift in Sources */,
 				8757563929D7390A002FDE38 /* Menu.swift in Sources */,
 				8757563529D73902002FDE38 /* Helper.swift in Sources */,
 			);
