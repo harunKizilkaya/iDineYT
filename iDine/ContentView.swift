@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    // to decode from .json File
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(menu) { section in
-                    Text("Hello World!")
-                    
+                    Section(section.name) {
+                        
+                        ForEach(section.items) { item in
+                            Text(item.name)
+                        }
+                        
+                    }
                 }
-                
             }
             .navigationTitle("Menu")
+            .listStyle(.grouped)
         }
     }
 }
