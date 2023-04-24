@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct iDineApp: App {
+    // will hold order alive to the entire lifetime of the app
+    @StateObject var order = Order()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(order)
         }
     }
 }
