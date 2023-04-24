@@ -22,9 +22,7 @@ struct OrderView: View {
                         }
                     }
                     .onDelete(perform: deleteItems)
-                    .toolbar {
-                        EditButton()
-                    }
+                    
                 }
                 
                 Section {
@@ -35,6 +33,9 @@ struct OrderView: View {
                 .disabled(order.items.isEmpty)
             }
             .navigationTitle("Order")
+            .toolbar {
+                EditButton()
+            }
         }
     }
     
